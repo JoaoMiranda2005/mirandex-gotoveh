@@ -6,7 +6,6 @@ RegisterCommand('gotoveh', function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
     local msg1 = 'Tens de especificar uma matrícula!'
     local msg2 = 'Não há veículos ativos!'
-    local steamid = GetPlayerName(source)
     if not args[1] then
         xPlayer.showNotification(msg1)
     elseif #entities < 1 then
